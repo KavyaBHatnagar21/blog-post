@@ -1,0 +1,9 @@
+.blogImage {
+  height: 12rem;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.main__image {
+  height: 20rem;
+}
