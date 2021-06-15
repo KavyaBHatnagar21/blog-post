@@ -42,7 +42,7 @@ function Body() {
                 {/* {new Date(posts[posts.length - 1]?.date?.toDate()).toUTCString()} */}
                 {moment(new Date(posts[0]?.data.date?.toDate())).fromNow()}
               </Card.Text>
-              <Card.Text>{posts[0]?.data.summary.substring(0, 350).trim()}...</Card.Text>
+              <Card.Text>{posts[0]?.data.summary.substring(0, 300).trim()}...</Card.Text>
             </Card.ImgOverlay>
           </Card>
         </Link>
