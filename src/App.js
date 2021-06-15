@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Blog from "./Components/Blog";
 import About from "./Components/About";
 import CreateBlog from "./Components/CreateBlog";
-import Login from "./Components/Login";
+import Comments from "./Components/Comments";
+
 
 function App() {
   return (
@@ -17,16 +18,16 @@ function App() {
         <Switch>
           <Route path="/blogs/:blogId">
             <Blog />
+            <Comments />
           </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
+
           <Route path="/about">
             <About />
           </Route>
           <Route path="/admin">
             <CreateBlog />
           </Route>
+
           <Route path="/">
             <Body />
           </Route>
